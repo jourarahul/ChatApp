@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.rahul.chatapp.SettingsActivity">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setting_img"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_centerHorizontal="true"
+        android:layout_width="180dp"
+        android:layout_height="180dp"/>
+    <TextView
+        android:id="@+id/setting_name"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:text="Display Name"
+        android:layout_below="@+id/setting_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/setting_status"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:text="Hi there!"
+        android:layout_below="@+id/setting_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/setting_changeimage"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="40dp"
+        android:text="Change Image"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/setting_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/setting_changestatus"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:text="Change Status"
+        android:layout_below="@+id/setting_changeimage"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
